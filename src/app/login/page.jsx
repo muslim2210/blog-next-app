@@ -33,10 +33,13 @@ const LoginPage = () => {
                   onClick={() => signIn("google")}
                 >
                   <div className="relative flex items-center space-x-4 justify-center">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/475656/google-color.svg"
-                      className="absolute left-0 w-5"
                       alt="google logo"
+                      width={20}
+                      height={20}
+                      priority
+                      className="absolute left-0"
                     />
                     <span className="block w-max font-semibold tracking-wide text-gray-700 dark:text-white text-sm transition duration-300 sm:text-base">
                       Continue with Google
