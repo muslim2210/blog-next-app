@@ -79,8 +79,8 @@ const Comments = ({ postSlug }) => {
       <div className="flex flex-col gap-y-10 mt-14">
         {isLoading
           ? "loading"
-          : data?.map((comment) => (
-              <div className="flex flex-col gap-y-4" key={comment._id}>
+          : data?.map((comment, index) => (
+              <div className="flex flex-col gap-y-4" key={index}>
                 <div className="flex gap-x-4 items-center">
                   {comment?.user?.image && (
                     <Image

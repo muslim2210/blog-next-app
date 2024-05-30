@@ -37,7 +37,7 @@ export default async function Menu() {
         <span className="text-sm text-muted-foreground">What's hot</span>
         <h2 className="text-xl font-bold">Most Popular</h2>
         <div className="flex flex-col gap-y-5 lg:gap-y-8 mt-7 mb-5">
-          {blog?.slice(7, 12).map((post) => (
+          {blog?.slice(8, 12).map((post) => (
             <MostPopular
               key={post.id}
               post={post}

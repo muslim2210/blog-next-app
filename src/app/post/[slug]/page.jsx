@@ -42,17 +42,17 @@ export default async function SinglePage({ params }) {
             )}
 
             <div className="flex flex-col gap-y-1 md:gap-y-2">
-              <h5 className="text-base capitalize">{post.user.name}</h5>
+              <h5 className="text-base capitalize">{post?.user?.name}</h5>
               <div className="flex gap-x-2 text-sm items-center">
                 <div
-                  className={`max-w-[70px] ${post.cat.bgColor} px-3 py-1 rounded-full`}
+                  className={`max-w-[70px] ${post?.cat?.bgColor} px-3 py-1 rounded-full`}
                 >
                   <p className="text-xs text-black mx-auto">{post.catSlug}</p>
                 </div>
 
                 <hr className="w-[8px] h-[1px] bg-muted" />
                 <span className="text-xs text-muted-foreground">
-                  {post.createdAt.substring(0, 10)}
+                  {post?.createdAt?.substring(0, 10)}
                 </span>
               </div>
             </div>

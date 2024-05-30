@@ -17,7 +17,7 @@ const CategoryItem = ({
     <>
       <div key={id}>
         <div className={`${containerStyles} ${bgColor}`}>
-          <Link href={`blog?cat=${title}`} className={`${linkStyles}`}>
+          <Link href={`/blog?cat=${title}`} className={`${linkStyles}`}>
             <div className={`relative ${imageContainerStyles}`}>
               {img && (
                 <Image

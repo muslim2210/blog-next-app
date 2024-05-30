@@ -66,12 +66,19 @@ export default async function Featured() {
                     </span>
                   </div>
 
-                  <p className="lg:hidden text-lg text-muted-foreground max-w-[350px] lg:max-w-full text-pretty">
-                    {post.desc.substring(0, 100)}...
-                  </p>
-                  <p className="hidden xl:block text-lg text-muted-foreground text-pretty">
-                    {post.desc.substring(0, 280)}...
-                  </p>
+                  <div
+                    className="lg:hidden text-lg text-muted-foreground max-w-[350px] lg:max-w-full text-pretty"
+                    dangerouslySetInnerHTML={{
+                      __html: post?.desc.substring(0, 100),
+                    }}
+                  />
+
+                  <div
+                    className="hidden xl:block text-lg text-muted-foreground text-pretty"
+                    dangerouslySetInnerHTML={{
+                      __html: post?.desc.substring(0, 270),
+                    }}
+                  />
 
                   <div className="max-w-[200px]">
                     <Button>
