@@ -12,9 +12,6 @@ const Nav = ({ containerStyles, linkStyles }) => {
       <Link href="/blog" className={`capitalize font-sans ${linkStyles}`}>
         blog
       </Link>
-      <Link href="/about" className={`capitalize font-sans ${linkStyles}`}>
-        about
-      </Link>
       <AuthLinks {...{ linkStyles }} />
     </div>
   );
