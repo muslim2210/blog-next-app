@@ -26,9 +26,9 @@ export default async function CategoryList() {
           <CategoryItem
             key={item._id}
             {...item}
-            containerStyles="w-[150px] md:w-[200px] py-2 md:py-4 rounded-xl"
+            containerStyles="w-[130px] md:w-[200px] py-2 md:py-4 rounded-xl"
             linkStyles="flex max-w-[150px] mx-auto items-center gap-x-3"
-            imageContainerStyles="w-[50px] h-[50px] rounded-full relative"
+            imageContainerStyles="w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full relative ml-2"
             imageStyles="rounded-full object-cover"
             textStyles="text-medium md:text-lg font-medium hover:text-primary"
           />
