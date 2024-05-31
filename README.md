@@ -41,6 +41,8 @@ The blog app is an open-source project website where every logged-in user can co
 
 ![alt text](https://github.com/muslim2210/blog-next-app/blob/master/public/1.png?raw=true)
 
+### HomePage
+
 ![alt text](https://github.com/muslim2210/blog-next-app/blob/master/public/2.png?raw=true)
 
 ### Blog Page
